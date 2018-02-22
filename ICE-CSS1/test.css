@@ -1,0 +1,19 @@
+body {
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+	background-color: #FFFF00;
+} 
+ul {
+	margin: 30px auto;
+	padding: 0 20px;
+	text-align: center;
+}
+li {
+	color: #FFF;
+}
+h1 {
+	font-family: Georgia;
+}
