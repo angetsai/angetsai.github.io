@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact Me</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!--Style-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="icon" href="img/sun.png" type="image/png">
+		<style>
+			input{
+				display:inline-grid;
+			}
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+	<body id="secondary">
+		<header>
+			<nav id = "top-nav" class="top-nav">
+			<!--logo-->   
+			<div class="logo">
+			<a href="index.html"><img src="img/angetsai.png" alt="angel tsai home"></a>
+       		</div>
+	       <ul>
+	            <li><a href="index.html">home</a></li>
+	            <li><a href="about.html">about</a></li>
+	            <li><a href="projects.html">projects</a></li>
+	            <li><a href="travels.html">travels</a></li>
+	            <li><a class="current-page" href="contact.html">contact</a></li>
+	        </ul>   
+   			</nav>
+		</header>
+		<div id="main-content" class="main-content main-content-contact">
+			<h1>How can we get in touch?</h1>
+		</div>
+			<form action="#" method="post" name="name" id="id" class="form">
+				Have any questions? Leave your info and I'll get in touch shortly!
+				<br/>
+				<br/>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id = "name"><br/><br/>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id = "email"><br/><br/>
+				<label for="tel">Phone:</label>
+				<input type="tel" name="tel" id = "tel"><br/><br/>
+				<br/>
+
+				How would you like to be contacted?<br/>
+				<input type="radio" name="method" value="email"> E-mail<br/>
+			  	<input type="radio" name="method" value="phone"> Phone<br/>
+			  	<input type="radio" name="method" value="both"> Either works!<br/>
+
+			  	<br/>
+
+			  	What time of day do you prefer to be contacted?<br/>
+				<input type="checkbox" name="time" value="morning"> Morning<br/>
+			  	<input type="checkbox" name="time" value="afternoon"> Afternoon<br/>
+			  	<input type="checkbox" name="time" value="evening"> Evening<br/>
+			  	<input type="checkbox" name="time" value="night"> Night<br/>
+			  	<br/>
+			  	<input type="submit" value="Submit">
+			</form>
+		<footer class="footer">
+		<p style="display:inline;">&copy; 2018</p>
+		<a href = 'https://www.facebook.com/angel.lina.tsai' target="_blank"><img src="img/facebook.svg" class="socmed" alt="Facebook" style="width:35px;height:25px;"></a>
+		<a href="mailto:angetsai@umich.edu" target="_blank"><img src="img/email.svg" class="socmed" alt="Email" style="width: 55px;height:25px;"></a>
+		<a href="https://www.linkedin.com/in/angel-tsai-714920134/" target="_blank"><img src="img/logo-linked-in-.svg" class="socmed" alt="LinkedIn" style="width: 35px;height:25px;"></a>
+	</footer>
+	</body>
+</html>
