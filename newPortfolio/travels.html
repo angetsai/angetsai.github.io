@@ -15,8 +15,7 @@
 	
 	<header>
 		<nav id = "top-nav" class="top-nav">
-			<div class="logo">
-				<!--logo-->         	
+			<div class="logo">        	
 				<a href="index.html"><img src="img/angetsai.png" alt="angel tsai home"></a>
        		</div>
 	       <ul>
@@ -32,31 +31,72 @@
 		<h1>Where have I gone?</h1>
 		<div class ="slideshow-container">
 			<div class="slideShow">
-				<div class="number">1 / 5</div>
-					<img src="czech.jpg">
-					<div class="text">A photo from Kutna Hora in the Czech Republic!</div>
+					<img src="img/czech.jpg">
+					<div class="text">Summer 2012. This was taken in the attic of an old church in Kutna Hora, a city in the Czech Republic.</div>
 			</div>
-			<div class="slideshow-a">
-				<div class="number">2 / 5</div>
-					<img src="london.jpg">
-					<div class="text">A photo from a red telephone booth in the London!</div>
+			<div class="slideShow">
+					<img src="img/london.jpg">
+					<div class="text">Winter 2013. What's a trip to London without a photo in a red telephone booth?</div>
+			</div>
+			<div class="slideShow">
+					<img src="img/spain.jpg" class="rotate180">
+					<div class="text">Winter 2015. This is the Font Màgica, found in Barcelona, Spain! At night, there are amazing shows of water, music, and lights.</div>
+			</div>
+			<div class="slideShow">
+					<img src="img/italy.jpg" class="rotate180">
+					<div class="text">Winter 2016. Welcome to the ruins of Basilica Aemilia, just next to the Colosseum in Rome, Italy.</div>
+			</div>
+			<div class="slideShow">
+					<img src="img/greece.jpg" class="rotate180">
+					<div class="text">Summer 2017. Oia, Greece is known for whitewashed houses next to breathtaking views of the sea.</div>
 			</div>
 			<!-- Next and previous buttons -->
   			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
-		<br>
+		<br/><br/>
 
 		<!-- The dots/circles -->
 		<div style="text-align:center">
 		  <span class="dot" onclick="currentSlide(1)"></span> 
 		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
 		</div>
 	</div>
 
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slideShow");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+
 	<footer class="footer">
-		<p>&copy; 2018</p>
 		<a href = 'https://www.facebook.com/angel.lina.tsai' target="_blank"><img src="img/facebook.svg" class="socmed" alt="Facebook" style="width:35px;height:25px;"></a>
 		<a href="mailto:angetsai@umich.edu" target="_blank"><img src="img/email.svg" class="socmed" alt="Email" style="width: 55px;height:25px;"></a>
 		<a href="https://www.linkedin.com/in/angel-tsai-714920134/" target="_blank"><img src="img/logo-linked-in-.svg" class="socmed" alt="LinkedIn" style="width: 35px;height:25px;"></a>

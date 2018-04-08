@@ -10,66 +10,86 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<link rel="icon" href="img/sun.png" type="image/png">
-		<style>
-			input{
-				display:inline-grid;
-			}
-		</style>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		function checkFields(){
+			var name = document.getElementById('name').value;
+			var phone = document.getElementById('tel').value;
+			var nameError = document.getElementById('nameerrormsg');
+			var phoneError = document.getElementById('telerrormsg');
+
+			if (name === '' && phone === '') {
+				nameError.style.display = 'block';
+				phoneError.style.display = 'block';
+				return false;
+			} else if (name === '' && phone.length !=0) {
+				nameError.style.display = 'block';
+				phoneError.style.display = 'none';
+				return false;
+			} else if (phone === '' && name.length != 0) {
+				phoneError.style.display = 'block';
+				nameError.style.display = 'none';
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+		function checkForm(){
+			var options = document.getElementsByName('time');
+			for (let radio of options) {
+				if (radio.checked) {
+					return true;
+				}
+			}
+			alert("Please select a time of day!")
+			return false;
+		}
+
+		</script>
 
 	</head>
 	<body id="secondary">
 		<header>
-			<nav id = "top-nav" class="top-nav">
-			<!--logo-->   
-			<div class="logo">
-			<a href="index.html"><img src="img/angetsai.png" alt="angel tsai home"></a>
-       		</div>
-	       <ul>
-	            <li><a href="index.html">home</a></li>
-	            <li><a href="about.html">about</a></li>
-	            <li><a href="projects.html">projects</a></li>
-	            <li><a href="travels.html">travels</a></li>
-	            <li><a class="current-page" href="contact.html">contact</a></li>
-	        </ul>   
+			<nav id = "top-nav" class="top-nav"> 
+				<div class="logo">
+					<a href="index.html"><img src="img/angetsai.png" alt="angel tsai home"></a>
+       			</div>
+       			<ul>
+		            <li><a href="index.html">home</a></li>
+		            <li><a href="about.html">about</a></li>
+		            <li><a href="projects.html">projects</a></li>
+		            <li><a href="travels.html">travels</a></li>
+		            <li><a class="current-page" href="contact.html">contact</a></li>
+	        	</ul>   
    			</nav>
 		</header>
 		<div id="main-content" class="main-content main-content-contact">
 			<h1>How can we get in touch?</h1>
+
+			<p>Have any questions? Leave your info and I'll get in touch shortly!</p>
+				<form method="post" onsubmit="return checkForm() || checkFields()" action="thankyou.html">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id = "name"><br/><br/>
+					<p class="errormsg" id="nameerrormsg">Please enter your name!</p>
+					<label for="tel">Phone:</label>
+					<input type="tel" name="tel" id = "tel"><br/><br/>
+					<p class="errormsg" id="telerrormsg">Please enter your phone number!</p>
+
+					When would you prefer to be contacted?<br/>
+					<input type="radio" name="time" value="morn" id="morn"> Morning<br/>
+				  	<input type="radio" name="time" value="noon" id="noon"> Noon/Afternoon<br/>
+				  	<input type="radio" name="time" value="night" id="night"> Evening<br/>
+				  	<br/>
+
+				  	<input type="submit" value="Submit">
+				</form>
 		</div>
-			<form action="#" method="post" name="name" id="id" class="form">
-				Have any questions? Leave your info and I'll get in touch shortly!
-				<br/>
-				<br/>
-				<label for="name">Name:</label>
-				<input type="text" name="name" id = "name"><br/><br/>
-				<label for="email">Email:</label>
-				<input type="email" name="email" id = "email"><br/><br/>
-				<label for="tel">Phone:</label>
-				<input type="tel" name="tel" id = "tel"><br/><br/>
-				<br/>
 
-				How would you like to be contacted?<br/>
-				<input type="radio" name="method" value="email"> E-mail<br/>
-			  	<input type="radio" name="method" value="phone"> Phone<br/>
-			  	<input type="radio" name="method" value="both"> Either works!<br/>
-
-			  	<br/>
-
-			  	What time of day do you prefer to be contacted?<br/>
-				<input type="checkbox" name="time" value="morning"> Morning<br/>
-			  	<input type="checkbox" name="time" value="afternoon"> Afternoon<br/>
-			  	<input type="checkbox" name="time" value="evening"> Evening<br/>
-			  	<input type="checkbox" name="time" value="night"> Night<br/>
-			  	<br/>
-			  	<input type="submit" value="Submit">
-			</form>
 		<footer class="footer">
-		<p style="display:inline;">&copy; 2018</p>
-		<a href = 'https://www.facebook.com/angel.lina.tsai' target="_blank"><img src="img/facebook.svg" class="socmed" alt="Facebook" style="width:35px;height:25px;"></a>
-		<a href="mailto:angetsai@umich.edu" target="_blank"><img src="img/email.svg" class="socmed" alt="Email" style="width: 55px;height:25px;"></a>
-		<a href="https://www.linkedin.com/in/angel-tsai-714920134/" target="_blank"><img src="img/logo-linked-in-.svg" class="socmed" alt="LinkedIn" style="width: 35px;height:25px;"></a>
-	</footer>
+			<a href = 'https://www.facebook.com/angel.lina.tsai' target="_blank"><img src="img/facebook.svg" class="socmed" alt="Facebook" style="width:35px;height:25px;"></a>
+			<a href="mailto:angetsai@umich.edu" target="_blank"><img src="img/email.svg" class="socmed" alt="Email" style="width: 55px;height:25px;"></a>
+			<a href="https://www.linkedin.com/in/angel-tsai-714920134/" target="_blank"><img src="img/logo-linked-in-.svg" class="socmed" alt="LinkedIn" style="width: 35px;height:25px;"></a>
+		</footer>
 	</body>
 </html>
