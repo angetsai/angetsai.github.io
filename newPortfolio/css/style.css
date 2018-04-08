@@ -143,6 +143,10 @@ header {
 
 /* About page */
 
+.main-content-about {
+  text-align: center;
+}
+
 .main-content-about h1 {
   font-size: 30px;
   padding: 10px;
@@ -167,13 +171,16 @@ header {
 }
 
 .main-content-about figure {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   text-align: center;
 }
 
+.main-content-about object {
+  text-align: center;
+}
 
 /* Contact page */
 
@@ -253,7 +260,7 @@ header {
 
 .main-content-travels .slideShow .text {
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid;
   border-radius: 5px;
@@ -270,8 +277,8 @@ header {
   margin-top: -22px;
   color: #000000;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 20px;
+  transition: 0.7s ease;
 }
 
 .prev:hover, .next:hover {
