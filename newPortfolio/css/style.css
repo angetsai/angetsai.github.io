@@ -138,6 +138,7 @@ header {
   margin: auto;
   padding: 5px;
   color: #ffffff;
+  font-size: 17px;
 }
 
 /* About page */
@@ -252,7 +253,7 @@ header {
 
 .main-content-travels .slideShow .text {
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid;
   border-radius: 5px;
