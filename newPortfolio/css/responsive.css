@@ -25,7 +25,6 @@
 
 	.main-content-about .photo-grid {
 		display: inline-grid;
-		grid-template-columns: 1fr 1fr;
 	}
 
 	.main-content-about .a img {
@@ -34,6 +33,26 @@
 		width: 50%;
 		text-align: center;
 	}
+
+	.main-content-about object {
+		max-width: 600px;
+	}
+
+	.main-content-projects .photo-grid {
+		display: inline-grid;
+	}
+
+	.main-content-projects .internship img {
+		height: 80%;
+		width: 50%;
+		text-align: center;
+	}
+
+	.main-content-projects .product-design img {
+		text-align: center;
+		display: inline-block;
+	}
+
 
 	.main-content-travels h1 {
 		margin-left: 25%;
@@ -81,15 +100,6 @@
 		margin-top: 90px;
 	} 
 
-	/*.main-content-about {
-		margin-top: 30px;
-	}*/
-
-	/*.main-content-about .photo-grid{
-		margin-left: 1.5em;
-		margin-right: 1.5em;
-	}*/
-
 	.main-content-about .photo-grid {
 		display: inline-grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -101,9 +111,18 @@
 		text-align: center;
 	}
 
+	.main-content-about object {
+		margin-bottom: 100px;
+	}
+
 	.slideShow img {
   		height: 80%;
   		width: 80%;
+	}
+
+	.main-content-projects .product-design {
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	  display: inline-block;
 	}
 
 }

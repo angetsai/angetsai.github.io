@@ -231,6 +231,59 @@ header {
   text-align: center; 
 }
 
+.main-content-projects h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+}
+
+.main-content-projects h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-content-projects p {
+  padding: 3px;
+  text-align: center;
+}
+
+.main-content-projects .photo-grid {
+  text-align: center;
+}
+
+.capstone img{
+  height: 350px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.internship img{
+  height: 350px;
+  width: 70%;
+  text-align: center;
+}
+
+.product-design img{
+  width: 18%;
+  text-align: center;
+}
+
+.photo-grid-c {
+  text-align: center;
+}
+
+.photo-grid-c p{
+  margin-bottom: 100px;
+}
+
 /* Travels */
 
 .main-content-travels h1 {
