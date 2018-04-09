@@ -1,0 +1,118 @@
+/*-----MAIN-----*/
+@media only screen and (min-width: 650px){
+	nav {
+		text-align: center;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	nav ul li, .menu-icon {
+		border-top: 1px solid;
+	}
+
+	.logo img{
+		height: 3em;
+	}
+	.top-nav ul {
+		text-align:center;
+	}
+	.top-nav ul li{
+		display:inline-block;
+	}
+	.main-content-home{
+		margin-top: 140px;
+	}
+
+	.main-content-about .photo-grid {
+		display: inline-grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.main-content-about .a img {
+		display: inline-block;
+		height: 80%;
+		width: 50%;
+		text-align: center;
+	}
+
+	.main-content-about object {
+		max-width: 600px;
+	}
+
+	.product-design img {
+		text-align: center;
+	}
+
+
+	.main-content-travels h1 {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	.main-content-travels .slideShow img {
+  		height: 70%;
+  		width: 70%;
+  		text-align: center;
+  		padding: 10px;
+	}
+
+	.main-content-travels .slideShow .text {
+  		padding: 10px;
+  		width: 50%;
+	}
+
+	.main-content-contact h1 {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {
+	nav {
+		text-align: right;
+	}
+
+	.top-nav ul {
+		text-align: right;
+	}
+
+	.logo {
+		float: left;
+	}
+
+	.top-nav ul li {
+		border-top: 0px;
+		padding-top: 15px;
+	}
+
+	.main-content-home {
+		margin-top: 90px;
+	} 
+
+	.main-content-about .photo-grid {
+		display: inline-grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.main-content-about .a img{
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-content-about object {
+		margin-bottom: 100px;
+	}
+
+	.slideShow img {
+  		height: 80%;
+  		width: 80%;
+	}
+
+	.main-content-projects .product-design {
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	  display: inline-block;
+	}
+
+}
