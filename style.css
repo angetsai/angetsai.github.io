@@ -1,0 +1,409 @@
+/* Background/general */
+
+html {
+  box-sizing: border-box;
+}
+
+html,body {
+  height:100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #000000;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 3px;
+}
+
+
+#primary {
+  background-image: url("http://s3.amazonaws.com/medias.photodeck.com/82498198-ea9a-11e3-a24a-329e81129ea7/120323-0011_V2_BOSTON_MASSACHUSETTS_X_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#secondary {
+  background-color: #DCDCDC;
+}
+
+/* Header */
+header {
+  margin: 0; 
+  display:block;
+  position: sticky;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-color: #9b90a3;
+  border-bottom: 1px solid #c9c3be;
+  width: 100%;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.header{
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Navigation */
+.top-nav{
+  display: block;
+  position: relative;
+  top:0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav ul li{
+  display: block;
+  list-style-type: none;
+  display: block;
+  background-color: #9b90a3;
+}
+
+.top-nav ul li a{
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: .5em 1em;
+  display: block;
+  text-align: center;
+}
+
+.top-nav ul a:hover {
+  background-color: #d8bebf;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.top-nav ul a.current-page{
+  color: #ffffff;
+  background-color: #d8bebf;
+  border-radius: 10px;
+}
+
+/* Logo */
+.logo {
+  margin: 0;
+  text-align: center;
+  padding: .25em .75em;
+}
+.logo img{
+  height: 3em;
+}
+
+
+/* Homepage */
+.main-content-home {
+    background-color: #d8bebf;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 0px;   
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-content-home h1 {
+  font-size: 30px;
+  margin: auto;
+}
+
+.main-content-home p {
+  margin: auto;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* About page */
+
+.main-content-about {
+  text-align: center;
+}
+
+.main-content-about h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+}
+
+.main-content-about p {
+  padding: 3px;
+  text-align: center;
+}
+
+.main-content-about .a img {
+  height: 450px;
+  width: 450px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-content-about figure {
+  margin-bottom: 50px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.main-content-about object {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Contact page */
+
+.main-content-contact h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+}
+
+.main-content-contact p {
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content-contact form {
+  text-align: justify;
+  margin-left: 20%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #0000000;
+  padding: 10px;
+  margin-bottom: 10%;
+}
+
+.main-content-contact .errormsg {
+  text-align: justify;
+  color: red;
+  display: none;
+  padding: 0;
+}
+
+
+
+/* Projects */
+
+.main-content-projects h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center; 
+}
+
+.main-content-projects h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+}
+
+.main-content-projects h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-content-projects p {
+  padding: 3px;
+  text-align: center;
+}
+
+.main-content-projects .photo-grid {
+  text-align: center;
+}
+
+.capstone img{
+  height: 350px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.internship img{
+  height: 350px;
+  width: 70%;
+  text-align: center;
+}
+
+.product-design img{
+  width: 18%;
+  text-align: center;
+}
+
+.photo-grid-c {
+  text-align: center;
+}
+
+.photo-grid-c p{
+  margin-bottom: 100px;
+}
+
+/* Travels */
+
+.main-content-travels h1 {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #d8bebf;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+}
+
+/* Slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.main-content-travels .slideShow img {
+  height: 400px;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.main-content-travels .slideShow .text {
+  position: relative;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  max-width: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  margin-top: -22px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.7s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: #9b90a3;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 50px;
+}
+
+.active, .dot:hover {
+  background-color: #9b90a3;
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/* Footer */
+footer {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #9b90a3; 
+  color: #FFFFFF;
+  padding-top: 0.75em;
+  padding-bottom: 0.5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  border-top: 1px solid #c9c3be;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+}
+
+.socmed:hover {
+  opacity: 0.25;
+}
+
+
