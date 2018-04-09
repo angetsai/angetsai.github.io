@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<link rel="icon" href="img/sun.png" type="image/png">
 
-		<script type="text/javascript">
+		<script>
 		function checkFields(){
 			var name = document.getElementById('name').value;
 			var phone = document.getElementById('tel').value;
@@ -77,9 +77,9 @@
 					<p class="errormsg" id="telerrormsg">Please enter your phone number!</p>
 
 					When would you prefer to be contacted?<br/>
-					<input type="radio" name="time" value="morn" id="morn"> Morning<br/>
-				  	<input type="radio" name="time" value="noon" id="noon"> Noon/Afternoon<br/>
-				  	<input type="radio" name="time" value="night" id="night"> Evening<br/>
+					<input type="radio" name="time" value="morn" id="morn"><label for="morn"> Morning<br/>
+				  	<input type="radio" name="time" value="noon" id="noon"><label for="morn"> Noon/Afternoon<br/>
+				  	<input type="radio" name="time" value="night" id="night"><label for="morn"> Evening<br/>
 				  	<br/>
 
 				  	<input type="submit" value="Submit">
