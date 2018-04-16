@@ -5,14 +5,19 @@
 .photo {
   box-sizing: border-box;
   border: 5px solid blue;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
-.a img {
+.photo .a img {
   padding: 5%;
-  width: 50%;
+  width: 400px;
+  display: inline-block;
 }
 
-.b img {
+.photo .b img {
   padding: 5%;
-  width: 50%;
+  width: 400px;
+  display: inline-block;
 }

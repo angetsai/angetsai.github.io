@@ -5,18 +5,33 @@
   <title>Angel Tsai - Exam 2</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="responsive/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function toggleButton{
+      var hideButton = document.querySelector('#hide');
+      var showButton = document.querySelector('#show');
+      var photoOne = document.querySelector('.photo a');
+      var photoTwo = document.querySelector('.photo b');
+    }
+     if (hideButton.checked) {
+      photoOne.style.display = 'none';
+    } else {
+      photoOne.style.display = 'display';
+    }
+  } 
+  </script>
 </head>
 <body background="images/sun-pattern.png">
   <h1>Angel Tsai</h1>
   <div class="row">
-    <div class="photo a col-sm-6 col-sm-push-6">
+    <div class="photo a">
       <img src="images/examPic.JPG" alt="Colleen's picture">
     </div>
-    <div class="photo b col-sm-6 col-sm-pull-6">
+    <div class="photo b">
       <img src="images/UMSI-logo.jpg" alt="UMSI logo">
     </div>
   </div>
-  <button type="button">Hide Image</button>
-  <button type="button">Show Image</button>
+  <div id="hide"><button type="button">Hide Image</button></div>
+  <div id="show"><button type="button">Show Image</button></div>
 </body>
 </html>
