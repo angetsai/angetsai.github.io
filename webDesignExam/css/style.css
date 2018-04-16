@@ -1,22 +1,15 @@
-.home {
-  background-image: url('/images/polka-dots.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.row {
+  box-sizing: border-box;
+  border: 5px solid blue;
+  padding: 5%;
+  display: inline-block
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  display: -ms- flexbox;
-  display: flex;
-  }
+.a {
 
-  .flex-photo {
-    box-sizing: border-box;
-    border: 5px solid blue;
-    padding: 5%;
-  }
 
-  .a {
+}
 
-  }
+.b {
+
+}
