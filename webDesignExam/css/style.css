@@ -1,15 +1,18 @@
 .row {
+  width: 100%;
+}
+
+.photo {
   box-sizing: border-box;
   border: 5px solid blue;
+}
+
+.a img {
   padding: 5%;
-  display: inline-block
+  width: 50%;
 }
 
-.a {
-
-
-}
-
-.b {
-
+.b img {
+  padding: 5%;
+  width: 50%;
 }

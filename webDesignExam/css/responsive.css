@@ -1,0 +1,27 @@
+@media only screen and (max-width: 650px){
+
+.a img{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.b img{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+@media only screen and (min-width: 1000px){
+	.a img{
+		display: inline-block;
+		width: 50%;
+		text-align: center;
+	}
+
+	.b img{
+		display: inline-block;
+		width: 50%;
+		text-align: center;
+	}
+}
